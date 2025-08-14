@@ -1,16 +1,56 @@
-# sonnet
+# Sonnet - Music Genre Classification App
 
-Mood-based AI music playlist recommendation app and music genre recognition
+A Flutter app that classifies music genres using AI. Records audio, sends it to a Python API server for classification, and creates playlists on Spotify/Deezer.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- 🎤 Record audio and classify music genres
+- 🤖 AI-powered classification using TensorFlow Lite
+- 🎵 Create playlists on Spotify and Deezer
+- 🌐 Cross-platform (Android, iOS, Web)
+- 🔧 Python API server for accurate classification
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Quick Start
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 1. Start API Server
+```bash
+cd Music_Genre_Classification
+enable_firewall_new_ip.bat  # Run as Administrator
+start_api_new_ip.bat
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 2. Run Flutter App
+```bash
+flutter pub get
+flutter run
+```
+
+## 🔧 Setup
+
+- **IP Configuration**: Update `lib/services/api_music_classification_service.dart` with your laptop's IP
+- **Firewall**: Allow port 8000 for API server
+- **Dependencies**: Install Python requirements in `Music_Genre_Classification/`
+
+## 📁 Project Structure
+
+```
+sonnet/
+├── lib/                    # Flutter app source
+├── Music_Genre_Classification/  # Python API server
+├── assets/                 # Images and models
+└── android/ios/web/       # Platform-specific code
+```
+
+## 🎯 Usage
+
+1. Record audio in the app
+2. AI classifies the music genre
+3. Choose Spotify or Deezer
+4. Create playlist with similar songs
+
+## 📋 Requirements
+
+- Flutter 3.0+
+- Python 3.8+
+- TensorFlow Lite
+- Spotify/Deezer API keys

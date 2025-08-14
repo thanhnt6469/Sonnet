@@ -10,6 +10,12 @@
 .svn/
 migrate_working_dir/
 
+# Build outputs
+build/
+.dart_tool/
+*.iml
+*.lock
+
 # IntelliJ related
 *.iml
 *.ipr
@@ -43,9 +49,113 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Music Genre Classification folder (separate repository)
-Music_Genre_Classification/
+# FVM
+.fvm/
 
-# Generated files
-*.g.dart
-*.freezed.dart
+# Environment files
+.env
+.env.local
+.env.production
+
+# Backup files
+assets/images_backup/
+
+# Build outputs
+build/
+*.apk
+*.aab
+*.ipa
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Model files (keep the trained model)
+# *.tflite
+# *.h5
+# *.keras
+
+# Audio files for testing (keep them)
+# *.mp3
+# *.wav
+# *.m4a
+# *.aac
+# *.ogg
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Node modules (if any)
+node_modules/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
